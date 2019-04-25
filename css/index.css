@@ -209,7 +209,7 @@ body {
 	position: absolute;
 	z-index: 3;
 	text-align: center;
-	color: #ffeead;
+	color: black;
 	animation-name: movement;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
