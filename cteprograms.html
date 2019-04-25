@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>INDIGOS CTE</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link rel="stylesheet" href="css/cteprograms.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo" style="margin-left: 1vw">FloMo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="index.html" class="waves-light navitem">TSA Chapter</a></li>
+          <li><a href="cteprograms.html" class="navitem">CTE Programs</a></li>
+          <li><a href="https://gautambhaskar.github.io/indigosfm/index.html" class="navitem">Design Brief</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class = "screencover"></div>
+  <div width=100%>
+    <h1 class="videoCover" id="videoCover"> CTE @ FLOWER MOUND HS<br><br><br><br><i class="fas fa-chevron-down arrow down"></i> </h1>
+    <video class = "cteVideo" id="cteVideo" width="100%" style="height:auto;" autoplay muted loop>
+      <source src="images/ftcrobot.mp4" type="video/mp4">
+      Your browser does not support the video.
+    </video>
+  </div>
+  <div class = "box2" style="background: url('images/fm9_2.jpg'); background-attachment: fixed; padding-top: 15vw!important; padding-bottom: 15vw!important;">
+    <div class = "a">
+      <h3 class = "coverHeader hidden3">ABOUT US</h3>
+      <p class = "coverText hidden2">Flower Mound High School is a strong supporter of STEM and CTE programs. The school offers a multitude of classes ranging from marketing to architecture and engineering graphics. </p>
+    </div>
+  </div>
+  <div class = "box2" style="background: url('images/fm9_1.jpg'); background-attachment: static; padding-top: 15vw!important; padding-bottom: 15vw!important;">
+    <div class = "a">
+      <h3 class = "coverHeader hidden3">COMPUTER SCIENCE</h3>
+      <p class = "coverText hidden2">Computer Science is a class offered at FMHS where the teacher, Mrs. Hitch, educates her students in programming and scripting languages such as Java, HTML, CSS, and C++. This prepares students for a career in the IT field.</p>
+    </div>
+  </div>
+  <div class = "box2" style="background: url('images/roboticswin.jpg'); background-attachment: static; padding-top: 15vw!important; padding-bottom: 15vw!important;">
+    <div class = "a">
+      <h3 class = "coverHeader hidden3" style="opacity: 0!important; font-size: 8vw; font-weight: 1000; top: -3vw; ">ROBOTICS</h3>
+    </div>
+  </div>
+  <div class = "box3" style="background-image: url('images/robotics.jpg');background-attachment: fixed;">
+    <div class = "hidden1">
+      <p class = "coverText1" style = "font-weight: 600;">At the center of the STEM and CTE Programs is the Robotics Club. Mr. Szydlik teaches students how to construct, plan, and design successful robotics. Students from this club have gone to compete in prestigious tournaments like the FRC World Championships, VEX Nationals and Worlds Competitions, as well as the TSA VEX State Competition where our teams regularly place in the top 5.</p>
+    </div>
+  </div>
+  <div id = "engbox" class = "box2" style="background-image: url('images/wood.jpg'); padding-top: 15vw!important; padding-bottom: 15vw!important;">
+    <div class = "a">
+      <h3 class = "coverHeader hidden3">ENGINEERING</h3>
+      <p class = "coverText hidden1">The Engineering Design course taught by our TSA sponsor Mr. Szydlik is a comprehensive class that educates students in professional software such as Autodesk CAD and Inventor. In conjunction, he uses his experience to explain hand drawing to the students.</p>
+    </div>
+  </div>
+  <div id = "lastbox" class = "box2" style="background: url('images/fm9_4.jpg'); background-attachment: fixed; width: 100%;">
+        <div class = "a" style = "background: transparent;">
+          <h3 class = "coverHeader hidden3">CAREER CENTERS</h3>
+          <p class = "coverText hidden2">The Lewisville Independent School District provides two off campus career centers for further development of career and technology skills. Courses offered include video game design, biotechnology, architecture, mechanics, and cosmetology. Some of these courses offer certification and licensing in their specific areas as well. In addition, college credit can be earned for completion of these courses.</p>
+        </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".dropdown-trigger").dropdown({hover : true});
+      $('.parallax').parallax();
+       $('.slider').slider();
+    });
+    var animateHTML = function() {
+      var elems;
+      var windowHeight;
+      function init() {
+        elems = document.querySelectorAll('.hidden');
+        windowHeight = window.innerHeight;
+        addEventHandlers();
+        checkPosition();
+    }
+    function addEventHandlers() {
+      window.addEventListener('scroll', checkPosition);
+      window.addEventListener('resize', init);
+    }
+    function checkPosition() {
+      for (var i = 0; i < elems.length; i++) {
+        var positionFromTop = elems[i].getBoundingClientRect().top;
+        if (positionFromTop - windowHeight <= 0) {
+          elems[i].className = elems[i].className.replace(
+            'hidden',
+            'videoCover1'
+          );
+        }
+      }
+    }
+    return {
+      init: init
+    };
+  };
+  animateHTML().init();
+  var animateHTML = function() {
+    var elems;
+    var windowHeight;
+    function init() {
+      elems = document.querySelectorAll('.hidden1');
+      windowHeight = window.innerHeight;
+      addEventHandlers();
+      checkPosition();
+  }
+  function addEventHandlers() {
+    window.addEventListener('scroll', checkPosition);
+    window.addEventListener('resize', init);
+  }
+  function checkPosition() {
+    for (var i = 0; i < elems.length; i++) {
+      var positionFromTop = elems[i].getBoundingClientRect().top;
+      if (positionFromTop - windowHeight <= 0) {
+        elems[i].className = elems[i].className.replace(
+          'hidden1',
+          'exp1'
+        );
+      }
+    }
+  }
+  return {
+    init: init
+  };
+};
+animateHTML().init();
+
+var animateHTML = function() {
+  var elems;
+  var windowHeight;
+  function init() {
+    elems = document.querySelectorAll('.hidden3');
+    windowHeight = window.innerHeight;
+    addEventHandlers();
+    checkPosition();
+}
+function addEventHandlers() {
+  window.addEventListener('scroll', checkPosition);
+  window.addEventListener('resize', init);
+}
+function checkPosition() {
+  for (var i = 0; i < elems.length; i++) {
+    var positionFromTop = elems[i].getBoundingClientRect().top;
+    if (positionFromTop - windowHeight <= 0) {
+      elems[i].className = elems[i].className.replace(
+        'hidden3',
+        'exp3'
+      );
+    }
+  }
+}
+return {
+  init: init
+};
+};
+animateHTML().init();
+var animateHTML = function() {
+  var elems;
+  var windowHeight;
+  function init() {
+    elems = document.querySelectorAll('.hidden2');
+    windowHeight = window.innerHeight;
+    addEventHandlers();
+    checkPosition();
+}
+function addEventHandlers() {
+  window.addEventListener('scroll', checkPosition);
+  window.addEventListener('resize', init);
+}
+function checkPosition() {
+  for (var i = 0; i < elems.length; i++) {
+    var positionFromTop = elems[i].getBoundingClientRect().top;
+    if (positionFromTop - windowHeight <= 0) {
+      elems[i].className = elems[i].className.replace(
+        'hidden2',
+        'exp'
+      );
+    }
+  }
+}
+return {
+  init: init
+};
+};
+animateHTML().init();
+  </script>
+</body>
+<footer class="page-footer grey darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">FloMo</h5>
+        <p class="grey-text text-lighten-4">Dallas, TX</p>
+        <p class="grey-text text-lighten-4 left" href="#!">Website built with support of FloMo TSA</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="reflink" href="https://www.spotify.com">Spotify</a></li>
+          <li><a class="reflink" href="https://soundcloud.com/the-indigos-868778755">SoundCloud</a></li>
+          <li><a class="reflink" href="https://www.instagram.com">Instagram</a></li>
+          <li><a class="reflink" href="https://twitter.com">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2019 Flower Mound TSA
+    <p class="grey-text text-lighten-4 right" href="#!">Code by Webmaster Team of Chapter 057.</p>
+    </div>
+  </div>
+</footer>
+</html>
