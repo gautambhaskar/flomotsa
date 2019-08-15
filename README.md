@@ -4,6 +4,11 @@ A website about the TSA Chapter at Flower Mound High School designed by 3 team m
 ## Frameworks
 Built with Materialize CSS and direct HTML. 
 
+## Team
+- sloanbdavis
+- KingChad127
+- JetBlack011
+
 ## Content
 It is essentially a website about the FloMo TSA Chapter and Flower Mound HS. 
 
